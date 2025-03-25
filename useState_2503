@@ -1,0 +1,14 @@
+import React, {useState} from 'react';
+import {View, Text, Button} from 'react-native';
+
+export default function App() {
+
+  const [a, setA] = useState(5);
+  const [b, setB] = useState(3);
+  const [resultado, setResultado] = useState('');
+
+      const quandoclicado = () => {
+        const soma = a + b;
+        setResultado( 'Soma = ${SOMA}');
+  };
+}
